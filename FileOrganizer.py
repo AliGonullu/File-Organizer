@@ -110,7 +110,7 @@ root.geometry("550x600")
 directory_path = tk.StringVar()
 tk.Label(root, text="Select Directory to Organize:").pack(pady=5)
 tk.Entry(root, textvariable=directory_path, width=50).pack(padx=10, pady=5)
-tk.Button(root, text="Browse", command=select_directory).pack(pady=5)
+tk.Button(root, text="Browse", command=select_directory, bg="darkred", fg="white").pack(pady=5)
 tk.Button(root, text="Organize Files", command=organize, bg="green", fg="white").pack(pady=15)
 
 output_log = scrolledtext.ScrolledText(root, width=60, height=10)
